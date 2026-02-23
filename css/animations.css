@@ -2,11 +2,11 @@
    ANIMATIONS & KEYFRAMES
    ============================================= */
 
-/* Fade In Up - base animation for entry elements */
+/* Fade In Up - subtle entry animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(32px);
+        transform: translateY(20px);
     }
 
     to {
@@ -28,7 +28,7 @@
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateX(-32px);
+        transform: translateX(-16px);
     }
 
     to {
@@ -40,7 +40,7 @@
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(32px);
+        transform: translateX(16px);
     }
 
     to {
@@ -52,7 +52,7 @@
 @keyframes scaleIn {
     from {
         opacity: 0;
-        transform: scale(0.92);
+        transform: scale(0.95);
     }
 
     to {
@@ -61,20 +61,7 @@
     }
 }
 
-/* Hero glow pulse */
-@keyframes glow-pulse {
-
-    0%,
-    100% {
-        box-shadow: 0 0 40px rgba(79, 142, 247, 0.3), 0 0 80px rgba(124, 111, 247, 0.15);
-    }
-
-    50% {
-        box-shadow: 0 0 60px rgba(79, 142, 247, 0.5), 0 0 120px rgba(124, 111, 247, 0.25);
-    }
-}
-
-/* Floating animation */
+/* Floating animation (reduced amplitude) */
 @keyframes float {
 
     0%,
@@ -83,7 +70,7 @@
     }
 
     50% {
-        transform: translateY(-12px);
+        transform: translateY(-8px);
     }
 }
 
@@ -102,17 +89,6 @@
     }
 }
 
-/* Loading spinner */
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* Pulse dot */
 @keyframes pulse-dot {
 
@@ -123,12 +99,12 @@
     }
 
     50% {
-        opacity: 0.6;
-        transform: scale(0.8);
+        opacity: 0.5;
+        transform: scale(0.85);
     }
 }
 
-/* Shimmer for skill bars */
+/* Shimmer */
 @keyframes shimmer {
     0% {
         background-position: -200% center;
@@ -139,49 +115,9 @@
     }
 }
 
-/* Border glow */
-@keyframes border-glow {
-
-    0%,
-    100% {
-        border-color: rgba(79, 142, 247, 0.2);
-    }
-
-    50% {
-        border-color: rgba(79, 142, 247, 0.5);
-    }
-}
-
-/* Orbit background element */
-@keyframes orbit {
-    from {
-        transform: rotate(0deg) translateX(120px) rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg) translateX(120px) rotate(-360deg);
-    }
-}
-
-/* Twinkle for particle-like effects */
-@keyframes twinkle {
-
-    0%,
-    100% {
-        opacity: 0.1;
-    }
-
-    50% {
-        opacity: 0.6;
-    }
-}
-
 /* =============================================
    ANIMATION UTILITY CLASSES
    ============================================= */
-
-/* Viewport-triggered animations using CSS only */
-/* These apply when elements gain the class via CSS :is() selectors or are in view */
 
 .animate-fade-up {
     animation: fadeInUp 0.7s ease forwards;
@@ -227,6 +163,3 @@
 .delay-8 {
     animation-delay: 0.8s;
 }
-
-/* Sections animate on load via :target / scroll tricks */
-/* Using CSS-only animation approach: elements animate when page loads, staggered by section position */

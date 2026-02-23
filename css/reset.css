@@ -2,7 +2,9 @@
    RESET & BASE STYLES
    ============================================= */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,13 +17,29 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: var(--font-body);
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+/* Accessibility: visible focus for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 a {
@@ -29,7 +47,8 @@ a {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -45,6 +64,7 @@ button {
   font-family: inherit;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: inherit;
 }

@@ -3,34 +3,34 @@
    ============================================= */
 
 :root {
-    /* --- Color Palette --- */
-    --bg-primary: #050b18;
-    --bg-secondary: #080f1f;
-    --bg-card: rgba(255, 255, 255, 0.04);
-    --bg-card-hover: rgba(255, 255, 255, 0.08);
+    /* --- Color Palette (Minimal Dark) --- */
+    --bg-primary: #0f172a;
+    --bg-surface: #1e293b;
+    --bg-card: #1e293b;
+    --bg-card-hover: #253449;
 
-    --accent-blue: #4f8ef7;
-    --accent-blue-bright: #6fa3fc;
-    --accent-purple: #7c6ff7;
-    --accent-cyan: #38bdf8;
-    --accent-glow: rgba(79, 142, 247, 0.3);
+    --accent: #38bdf8;
+    --accent-bright: #7dd3fc;
+    --accent-purple: #818cf8;
+    --accent-cyan: #22d3ee;
+    --accent-glow: rgba(56, 189, 248, 0.2);
 
-    --gradient-primary: linear-gradient(135deg, #4f8ef7 0%, #7c6ff7 100%);
-    --gradient-hero: linear-gradient(135deg, #050b18 0%, #0a1628 50%, #060d1e 100%);
-    --gradient-card: linear-gradient(135deg, rgba(79, 142, 247, 0.08) 0%, rgba(124, 111, 247, 0.06) 100%);
+    --gradient-primary: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+    --gradient-hero: linear-gradient(160deg, #0f172a 0%, #162036 50%, #0f172a 100%);
+    --gradient-card: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(129, 140, 248, 0.03) 100%);
 
-    --text-primary: #e8edf5;
-    --text-secondary: #8b96a8;
-    --text-muted: #4a5568;
-    --text-accent: #4f8ef7;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #475569;
+    --text-accent: #38bdf8;
 
-    --border-subtle: rgba(255, 255, 255, 0.07);
-    --border-accent: rgba(79, 142, 247, 0.3);
+    --border-subtle: rgba(148, 163, 184, 0.12);
+    --border-accent: rgba(56, 189, 248, 0.25);
 
-    /* --- Glass Effect --- */
-    --glass-bg: rgba(255, 255, 255, 0.04);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-blur: blur(20px);
+    /* --- Glass Effect (Softer) --- */
+    --glass-bg: rgba(30, 41, 59, 0.5);
+    --glass-border: rgba(148, 163, 184, 0.1);
+    --glass-blur: blur(12px);
 
     /* --- Spacing --- */
     --space-xs: 0.25rem;
@@ -43,8 +43,16 @@
     --space-4xl: 6rem;
 
     /* --- Typography --- */
-    --font-sans: 'Inter', 'Poppins', -apple-system, sans-serif;
+    --font-heading: 'Poppins', -apple-system, sans-serif;
+    --font-body: 'Inter', -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Clamp-based responsive type scale */
+    --text-h1: clamp(2.5rem, 5vw + 1rem, 4rem);
+    --text-h2: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+    --text-h3: clamp(1.25rem, 2vw + 0.25rem, 1.5rem);
+    --text-body: clamp(0.938rem, 0.5vw + 0.8rem, 1.063rem);
+    --text-small: clamp(0.75rem, 0.3vw + 0.65rem, 0.875rem);
 
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
@@ -54,8 +62,6 @@
     --text-2xl: 1.5rem;
     --text-3xl: 1.875rem;
     --text-4xl: 2.25rem;
-    --text-5xl: 3rem;
-    --text-6xl: 3.75rem;
 
     --font-normal: 400;
     --font-medium: 500;
@@ -66,16 +72,16 @@
     /* --- Border Radius --- */
     --radius-sm: 6px;
     --radius-md: 12px;
-    --radius-lg: 18px;
-    --radius-xl: 24px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
     --radius-full: 9999px;
 
-    /* --- Shadows --- */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
-    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
-    --shadow-accent: 0 8px 32px rgba(79, 142, 247, 0.25);
-    --shadow-card-hover: 0 20px 60px rgba(79, 142, 247, 0.2);
+    /* --- Shadows (Reduced intensity) --- */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+    --shadow-accent: 0 4px 20px rgba(56, 189, 248, 0.15);
+    --shadow-card-hover: 0 12px 40px rgba(56, 189, 248, 0.1);
 
     /* --- Transitions --- */
     --transition-fast: 150ms ease;

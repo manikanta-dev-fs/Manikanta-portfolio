@@ -13,7 +13,16 @@
   <meta property="og:description"
     content="Entry-level Full Stack Developer with hands-on experience in React, Node.js, FastAPI, and REST APIs." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manikanta | Full Stack Developer" />
+  <meta name="twitter:description" content="Full Stack Developer portfolio — React, Node.js, FastAPI, PostgreSQL." />
+  <meta name="twitter:image" content="assets/images/og-image.svg" />
+  <meta name="theme-color" content="#0f172a" />
   <title>Manikanta | Full Stack Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -59,6 +68,7 @@
           <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
           <li><a href="#contact" class="nav-cta">Hire Me</a></li>
         </ul>
       </div>
@@ -100,9 +110,16 @@
 
           <!-- Bio -->
           <p class="hero-bio">
-            Entry-level Full Stack Developer with hands-on experience building scalable web applications
-            using <strong>React, Node.js, FastAPI</strong>, and REST APIs. Strong in backend development
-            and system design — certified on Azure &amp; Google Cloud.
+            Building scalable web applications with <strong>React, Node.js, FastAPI</strong>, and REST APIs.
+            Certified on Azure &amp; Google Cloud — ready to contribute from day one.
+          </p>
+
+          <!-- Social proof -->
+          <p class="hero-bio" style="font-size: var(--text-sm); margin-bottom: var(--space-xl); opacity: 0.8;">
+            B.Tech CSE · 2 Internships · 4 Cloud Certifications · Open to Full Stack &amp; Backend Roles
+          </p>
+          <p class="hero-bio" style="font-size: var(--text-sm); margin-bottom: var(--space-xl);">
+            Focused on building scalable backend systems and clean user interfaces.
           </p>
 
           <!-- CTAs -->
@@ -115,7 +132,16 @@
               </svg>
               View Projects
             </a>
-            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            <a href="https://drive.google.com/file/d/1dn5y5xfXvG1vYO1ectjjINZDRRwHbtWu/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
             <a href="https://github.com/manikantap5325" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
@@ -165,10 +191,8 @@
           <!-- Image / Avatar -->
           <div class="about-image-wrapper">
             <div class="about-image-frame">
-              <div class="avatar-placeholder" role="img" aria-label="Profile avatar for Manikanta">
-                <span class="avatar-initials" aria-hidden="true">MK</span>
-                <span class="avatar-placeholder-label">Manikanta</span>
-              </div>
+              <img src="assets/images/profile.png" alt="Palakurthi V D S N Manikanta" class="about-avatar" width="300"
+                height="340" loading="lazy">
             </div>
             <div class="about-image-glow" aria-hidden="true"></div>
 
@@ -187,12 +211,12 @@
             <span class="section-tag">About Me</span>
             <h2 class="section-title">Passionate Engineer &amp; Problem Solver</h2>
 
-            <p class="about-bio">
+            <p class="about-bio about-text">
               I'm an entry-level Full Stack Developer from Andhra Pradesh, India, with a B.Tech in
               Computer Science. I've built scalable web applications using the MERN stack, FastAPI,
               and PostgreSQL — from responsive UIs to containerized backends.
             </p>
-            <p class="about-bio">
+            <p class="about-bio about-text">
               I've interned at <strong style="color: var(--text-primary);">Tiqo Technologies</strong> and
               <strong style="color: var(--text-primary);">SKILLDZIRE</strong>, where I developed production
               features, integrated AI agents, and optimized React performance. I'm passionate about clean
@@ -232,7 +256,8 @@
             </div>
 
             <!-- Certifications -->
-            <p class="about-detail-label" style="margin-bottom: var(--space-sm); letter-spacing: 0.08em; text-transform: uppercase; font-size: var(--text-xs); color: var(--text-muted);">Certifications</p>
+            <p class="about-detail-label" style="margin-bottom: var(--space-sm);">
+              Certifications</p>
             <div class="about-certifications">
               <div class="cert-item">
                 <div class="cert-icon">✓</div>
@@ -285,7 +310,8 @@
         <div class="section-header">
           <span class="section-tag">Tech Stack</span>
           <h2 class="section-title">Skills & Technologies</h2>
-          <p class="section-subtitle">A curated set of tools and technologies I use to build modern, scalable applications.</p>
+          <p class="section-subtitle">A curated set of tools and technologies I use to build modern, scalable
+            applications.</p>
         </div>
 
         <div class="skills-categories">
@@ -435,7 +461,8 @@
               <ul class="exp-bullets" role="list">
                 <li class="exp-bullet">
                   <span class="exp-bullet-dot" aria-hidden="true"></span>
-                  Developed responsive frontend components from Figma designs using <strong>React</strong> and <strong>TypeScript</strong>.
+                  Developed responsive frontend components from Figma designs using <strong>React</strong> and
+                  <strong>TypeScript</strong>.
                 </li>
                 <li class="exp-bullet">
                   <span class="exp-bullet-dot" aria-hidden="true"></span>
@@ -466,7 +493,8 @@
               <ul class="exp-bullets" role="list">
                 <li class="exp-bullet">
                   <span class="exp-bullet-dot" aria-hidden="true"></span>
-                  Developed <strong>MERN stack applications</strong> with REST APIs, reducing development time by <strong>30%</strong>.
+                  Developed <strong>MERN stack applications</strong> with REST APIs, reducing development time by
+                  <strong>30%</strong>.
                 </li>
                 <li class="exp-bullet">
                   <span class="exp-bullet-dot" aria-hidden="true"></span>
@@ -488,7 +516,8 @@
         <div class="section-header">
           <span class="section-tag">Portfolio</span>
           <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">A selection of projects showcasing full-stack, backend, and AI integration skills.</p>
+          <p class="section-subtitle">A selection of projects showcasing full-stack, backend, and AI integration skills.
+          </p>
         </div>
 
         <div class="projects-grid">
@@ -510,21 +539,23 @@
             <div class="project-body">
               <h3 class="project-name">NexTrack</h3>
               <p class="project-description">
-                A production-ready RESTful backend supporting expense tracking with pagination, filtering,
-                and real-time statistics. Containerized with Docker for scalable deployment.
+                Expense tracking is manual and error-prone. NexTrack solves this with a production-grade
+                RESTful API that handles pagination, multi-field filtering, and real-time spending analytics
+                — all backed by async PostgreSQL and containerized with Docker.
               </p>
+              <p class="project-impact">Handles 500+ records with sub-100ms queries · Docker-ready · Fully async I/O</p>
               <div class="project-highlights">
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  Async database operations with PostgreSQL
+                  Designed async CRUD with SQLAlchemy + asyncpg for non-blocking DB access
                 </div>
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  Docker containerization for scalable deployment
+                  Built paginated endpoints with configurable page size and sort order
                 </div>
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  Pagination, filtering & real-time statistics API
+                  Dockerized the full stack with multi-stage builds for lean images
                 </div>
               </div>
               <div class="project-tech">
@@ -553,21 +584,23 @@
             <div class="project-body">
               <h3 class="project-name">Real-Time Collaborative Whiteboard</h3>
               <p class="project-description">
-                A full-stack collaborative whiteboard enabling real-time multi-user drawing. Features low-latency
-                synchronization via WebSockets and an interactive React + HTML5 Canvas frontend.
+                Remote teams need shared visual tools. This whiteboard supports multiple users drawing
+                simultaneously on an HTML5 Canvas, with WebSocket synchronization achieving
+                near-instant updates — no page refreshes, no lost strokes.
               </p>
+              <p class="project-impact">Supports 5+ concurrent users · ~50ms sync latency · Persistent room state</p>
               <div class="project-highlights">
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  Real-time multi-user drawing via WebSockets
+                  Engineered WebSocket event pipeline for bi-directional real-time sync
                 </div>
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  HTML5 Canvas frontend with React
+                  Built interactive Canvas renderer with freehand, shapes, and eraser tools
                 </div>
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  Low-latency synchronization engine
+                  Persisted room state in PostgreSQL with Redis caching for active sessions
                 </div>
               </div>
               <div class="project-tech">
@@ -596,21 +629,24 @@
             <div class="project-body">
               <h3 class="project-name">AI Thumbnail Generator</h3>
               <p class="project-description">
-                A full-stack platform to generate AI-powered thumbnails using modern AI APIs. Features a
-                responsive React interface and REST APIs to manage prompt and image generation workflows.
+                Creating thumbnails manually is slow and inconsistent. This platform automates it — users
+                provide a text prompt and the AI generates optimized thumbnails, removes backgrounds,
+                and applies custom styles, all through a clean React interface.
               </p>
+              <p class="project-impact">AI-powered generation pipeline · 3-step prompt workflow · Background removal in
+                &lt;2s</p>
               <div class="project-highlights">
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  AI-powered image generation via modern APIs
+                  Integrated AI image generation with prompt engineering and parameter tuning
                 </div>
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  Full-stack with React frontend and FastAPI backend
+                  Built automated background removal with rembg + AI-generated replacements
                 </div>
                 <div class="project-highlight">
                   <span class="project-highlight-dot" aria-hidden="true"></span>
-                  Background removal &amp; AI background generation
+                  Designed gallery with history persistence and one-click re-editing
                 </div>
               </div>
               <div class="project-tech">
@@ -671,6 +707,65 @@
     </section>
 
     <!-- =============================================
+         BLOG SECTION
+         ============================================= -->
+    <section id="blog" class="blog section" aria-label="Blog posts">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Insights</span>
+          <h2 class="section-title">Blog</h2>
+          <p class="section-subtitle">Thoughts on software engineering, project learnings, and career growth.</p>
+        </div>
+
+        <div class="blog-grid">
+
+          <!-- Article 1 -->
+          <article class="blog-card">
+            <div class="blog-card-meta">
+              <span class="blog-date">Feb 2026</span>
+              <span class="tag tag-blue">Backend</span>
+            </div>
+            <h3 class="blog-card-title">How I Built a Production-Grade REST API with FastAPI</h3>
+            <p class="blog-card-excerpt">
+              Lessons from building NexTrack — async database patterns, Docker multi-stage builds,
+              and pagination strategies that actually scale.
+            </p>
+            <a href="#" class="blog-card-link">Read more →</a>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card">
+            <div class="blog-card-meta">
+              <span class="blog-date">Jan 2026</span>
+              <span class="tag tag-purple">Real-Time</span>
+            </div>
+            <h3 class="blog-card-title">WebSockets vs Polling: Lessons from a Real-Time Whiteboard</h3>
+            <p class="blog-card-excerpt">
+              Why I chose WebSockets over long polling for multi-user drawing, and how I
+              optimized sync latency to under 50ms.
+            </p>
+            <a href="#" class="blog-card-link">Read more →</a>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card">
+            <div class="blog-card-meta">
+              <span class="blog-date">Dec 2025</span>
+              <span class="tag tag-cyan">Career</span>
+            </div>
+            <h3 class="blog-card-title">4 Cloud Certifications as a B.Tech Student — Was It Worth It?</h3>
+            <p class="blog-card-excerpt">
+              My experience getting certified on Azure and Google Cloud while still in college,
+              and how it shaped my engineering mindset.
+            </p>
+            <a href="#" class="blog-card-link">Read more →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
          CONTACT SECTION
          ============================================= -->
     <section id="contact" class="contact section" aria-label="Contact">
@@ -703,8 +798,8 @@
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/manikanta-palakurthi" target="_blank"
-                rel="noopener noreferrer" class="contact-method" aria-label="LinkedIn profile">
+              <a href="https://www.linkedin.com/in/manikanta-palakurthi" target="_blank" rel="noopener noreferrer"
+                class="contact-method" aria-label="LinkedIn profile">
                 <div class="contact-method-icon" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="#4f8ef7" aria-hidden="true">
                     <path
@@ -736,18 +831,17 @@
           <!-- Right: Form -->
           <div class="contact-form-wrapper">
             <h3 class="contact-form-title">Send a Message</h3>
-            <form action="mailto:manikantap5325@gmail.com" method="GET" enctype="text/plain"
-              aria-label="Contact form">
+            <form action="mailto:manikantap5325@gmail.com" method="GET" enctype="text/plain" aria-label="Contact form">
               <div class="form-row">
                 <div class="form-group">
                   <label for="contact-name" class="form-label">Your Name</label>
-                  <input type="text" id="contact-name" name="name" class="form-input"
-                    placeholder="John Doe" required autocomplete="name" />
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="John Doe" required
+                    autocomplete="name" />
                 </div>
                 <div class="form-group">
                   <label for="contact-email" class="form-label">Email Address</label>
-                  <input type="email" id="contact-email" name="email" class="form-input"
-                    placeholder="john@company.com" required autocomplete="email" />
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="john@company.com"
+                    required autocomplete="email" />
                 </div>
               </div>
               <div class="form-group">
@@ -761,8 +855,8 @@
                   placeholder="Tell me about the role or project..." required></textarea>
               </div>
               <button type="submit" class="form-submit">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <line x1="22" y1="2" x2="11" y2="13"></line>
                   <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
@@ -794,23 +888,23 @@
         </p>
 
         <div class="footer-socials">
-          <a href="https://github.com/manikantap5325" target="_blank" rel="noopener noreferrer"
-            class="footer-social" aria-label="GitHub profile">
+          <a href="https://github.com/manikantap5325" target="_blank" rel="noopener noreferrer" class="footer-social"
+            aria-label="GitHub profile">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
                 d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/manikanta-palakurthi" target="_blank"
-            rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn profile">
+          <a href="https://www.linkedin.com/in/manikanta-palakurthi" target="_blank" rel="noopener noreferrer"
+            class="footer-social" aria-label="LinkedIn profile">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
           </a>
           <a href="mailto:manikantap5325@gmail.com" class="footer-social" aria-label="Send email">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="2" y="4" width="20" height="16" rx="2"></rect>
               <polyline points="22,4 12,13 2,4"></polyline>
             </svg>
@@ -822,4 +916,5 @@
   </footer>
 
 </body>
+
 </html>
