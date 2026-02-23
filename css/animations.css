@@ -74,6 +74,47 @@
     }
 }
 
+/* Particle drift — slow, organic movement */
+@keyframes particle-drift {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.4;
+    }
+
+    25% {
+        transform: translate(30px, -20px);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translate(-15px, -35px);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: translate(20px, 10px);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0.4;
+    }
+}
+
+/* Slow pulse glow for particles */
+@keyframes particle-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 4px rgba(56, 189, 248, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+    }
+}
+
 /* Gradient shift for hero text */
 @keyframes gradient-shift {
     0% {
