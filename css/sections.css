@@ -353,6 +353,14 @@
     animation: fadeInUp 0.6s ease 0.3s both;
 }
 
+.hero-social-proof {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    opacity: 0.8;
+    margin-bottom: var(--space-xl);
+    animation: fadeInUp 0.6s ease 0.35s both;
+}
+
 .hero-actions {
     display: flex;
     align-items: center;
@@ -592,6 +600,10 @@
     font-size: var(--text-sm);
     color: var(--text-primary);
     font-weight: var(--font-medium);
+}
+
+.about-cert-label {
+    margin-bottom: var(--space-sm);
 }
 
 .about-certifications {
